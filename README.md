@@ -1,8 +1,6 @@
-![Grasscutter](https://socialify.git.ci/Grasscutters/Grasscutter/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fs2.loli.net%2F2022%2F04%2F25%2FxOiJn7lCdcT5Mw1.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
-<div align="center">
 
-<a href="https://jq.qq.com/?_wv=1027&k=SbFzGOKs" target="_blank">CubeServerQ群</a>
-<a href="https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=1W5m76A&appChannel=share&businessType=9&from=246610&biz=ka" target="_blank"CubeServer官方QQ频道</a>
+
+
 
 </div>
 
@@ -23,7 +21,7 @@
 
 ## 快速设置指南
 
-**注意:** 如需帮助请加入 [Discord](https://discord.gg/T5vZU6UyeG)
+**注意:** 如需帮助请加入 [QQ频道](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=1W5m76A&appChannel=share&businessType=9&from=246610&biz=ka)
 
 ### 环境需求
 
@@ -40,14 +38,13 @@
 **注意:** 从旧版本升级到新版本, 需要删除 `config.json` 文件
 
 1. 获取 `grasscutter.jar`
-   - 从 [actions](https://github.com/Grasscutters/Grasscutter/suites/6895963598/artifacts/267483297) 下载
    - [自行编译](#编译)
-2. 在 JAR 文件根目录中创建 `resources` 文件夹并复制 `BinOutput` 和 `ExcelBinOutput` *(查看 [wiki](https://github.com/Grasscutters/Grasscutter/wiki) 了解更多)*
+2. 在 JAR 文件根目录中创建 `resources` 文件夹并复制 `BinOutput` 和 `ExcelBinOutput`
 3. 命令行 `java -jar grasscutter.jar` 运行 Grasscutter。**在此之前请确认 MongoDB 服务运行正常**
 
 ### 客户端连接
 
-½. 在服务器控制台[创建账户](https://github.com/Grasscutters/Grasscutter/wiki/Commands#targeting)
+½. 在服务器控制台创建账户
 
 1. 重定向流量: (选择其中一个)
     - mitmdump: `mitmdump -s proxy.py -k`
@@ -66,9 +63,8 @@
     
     - Fiddler Classic: 运行 Fiddler Classic, 在设置中开启 `解密 https 通信` 并将端口设为除 `8888` 以外的任意端口 (工具 -> 选项 -> 连接) 并加载[此脚本](https://github.lunatic.moe/fiddlerscript)
       
-    - [Hosts 文件](https://github.com/Grasscutters/Grasscutter/wiki/Running#traffic-route-map)
     
-2. 设置代理为 `127.0.0.1:8080` 或你设置的端口
+2. 设置代理为 `127.0.0.1:8899` 或你设置的端口
 
 **也可直接运行 `start.cmd` 一键启动服务端并设置代理, 但必须设置 `JAVA_HOME` 环境变量**
 
@@ -84,7 +80,7 @@ Grasscutter 使用 Gradle 来处理依赖及编译。
 ##### Windows
 
 ```shell
-git clone https://github.com/Grasscutters/Grasscutter.git
+git clone https://github.com/Clout333/Gc.git
 cd Grasscutter
 .\gradlew.bat # 建立开发环境
 ./gradlew jar # 编译
@@ -93,7 +89,7 @@ cd Grasscutter
 ##### Linux
 
 ```bash
-git clone https://github.com/Grasscutters/Grasscutter.git
+git clone https://github.com/Clout333/Gc.git
 cd Grasscutter
 chmod +x gradlew
 ./gradlew jar # 编译
@@ -101,7 +97,6 @@ chmod +x gradlew
 
 编译后的 JAR 文件存放在根目录
 
-### 命令列表请到 [wiki](https://github.com/Grasscutters/Grasscutter/wiki/Commands) 查看
 
 # 快速排除问题
 
